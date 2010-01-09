@@ -6,6 +6,7 @@ License:	BSD-like
 Group:		Applications
 Source0:	http://hal.freedesktop.org/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	c68b1f30dc5f8f2ac2417c53f8adc639
+BuildRequires:	pkgconfig
 BuildRequires:	udev-devel
 #Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
