@@ -1,14 +1,13 @@
 Summary:	Media player info files
 Name:		media-player-info
-Version:	4
-Release:	0.1
+Version:	6
+Release:	1
 License:	BSD-like
 Group:		Applications
 Source0:	http://hal.freedesktop.org/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	c68b1f30dc5f8f2ac2417c53f8adc639
+# Source0-md5:	ac345d186ae8112f4854c1535ede51e8
 BuildRequires:	pkgconfig
 BuildRequires:	udev-devel
-#Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,6 +35,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README COPYING
-#%attr(755,root,root) %{_bindir}/*
 %{_datadir}/media-player-info
-/lib/udev/rules.d/90-usb-media-players.rules
+/lib/udev/rules.d/40-usb-media-players.rules
