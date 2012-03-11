@@ -1,11 +1,11 @@
 Summary:	Media player info files
 Name:		media-player-info
-Version:	6
+Version:	16
 Release:	1
 License:	BSD-like
 Group:		Applications
-Source0:	http://hal.freedesktop.org/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	ac345d186ae8112f4854c1535ede51e8
+Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
+# Source0-md5:	11a01496a94522583431cc6c12b2c678
 BuildRequires:	pkgconfig
 BuildRequires:	udev-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
