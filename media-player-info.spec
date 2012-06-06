@@ -1,12 +1,12 @@
 Summary:	Media player info files
 Summary(pl.UTF-8):	Pliki media player info	
 Name:		media-player-info
-Version:	16
+Version:	17
 Release:	1
 License:	BSD-like
 Group:		Applications
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
-# Source0-md5:	11a01496a94522583431cc6c12b2c678
+# Source0-md5:	f9349653c4aa8fb3e34cf319124ccd44
 URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
 BuildRequires:	udev-devel
