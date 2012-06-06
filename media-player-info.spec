@@ -1,4 +1,5 @@
 Summary:	Media player info files
+Summary(pl.UTF-8):	Pliki media player info	
 Name:		media-player-info
 Version:	16
 Release:	1
@@ -11,10 +12,16 @@ BuildRequires:	udev-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-media-player-info is a repository of data files describing media player (mostly
-USB Mass Storage ones) capabilities. These files contain information about the
-directory layout to use to add music to these devices, about the supported file
-formats, etc.
+media-player-info is a repository of data files describing media
+player (mostly USB Mass Storage ones) capabilities. These files
+contain information about the directory layout to use to add music to
+these devices, about the supported file formats, etc.
+
+%description -l pl.UTF-8
+media-player-info to repozytorium plikowe opisujące właściwości
+odtwarzaczy muzyki (większość to pamięci masowe USB). Pliki zawierają
+informację o strukturze katalogów aby dodawać muzykę do tych urządzeń,
+o wspieranych formatach dzwiękowych, itd. 
 
 %prep
 %setup -q
