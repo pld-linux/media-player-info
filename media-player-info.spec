@@ -1,5 +1,5 @@
 Summary:	Media player info files
-Summary(pl.UTF-8):	Pliki media player info	
+Summary(pl.UTF-8):	Pliki media player info
 Name:		media-player-info
 Version:	21
 Release:	2
@@ -10,8 +10,8 @@ Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version
 URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
 BuildRequires:	python3
-BuildRequires:	udev-devel >= 196
 BuildRequires:	rpmbuild(macros) >= 1.691
+BuildRequires:	udev-devel >= 196
 Requires(post,postun):	udev-core >= 1:196
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,7 +25,7 @@ these devices, about the supported file formats, etc.
 media-player-info to repozytorium plikowe opisujące właściwości
 odtwarzaczy muzyki (większość to pamięci masowe USB). Pliki zawierają
 informację o strukturze katalogów aby dodawać muzykę do tych urządzeń,
-o wspieranych formatach dzwiękowych, itd. 
+o wspieranych formatach dzwiękowych, itd.
 
 %prep
 %setup -q
