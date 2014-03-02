@@ -2,7 +2,7 @@ Summary:	Media player info files
 Summary(pl.UTF-8):	Pliki media player info	
 Name:		media-player-info
 Version:	21
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Applications
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
@@ -11,6 +11,8 @@ URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
 BuildRequires:	python3
 BuildRequires:	udev-devel >= 196
+BuildRequires:	rpmbuild(macros) >= 1.691
+Requires(post,postun):	udev-core >= 1:196
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,6 +42,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%udev_hwdb_update
+
+%postun
+%udev_hwdb_update
 
 %files
 %defattr(644,root,root,755)
