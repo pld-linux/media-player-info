@@ -1,17 +1,17 @@
 Summary:	Media player info files
 Summary(pl.UTF-8):	Pliki media player info
 Name:		media-player-info
-Version:	21
-Release:	2
+Version:	22
+Release:	1
 License:	BSD-like
 Group:		Applications
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
-# Source0-md5:	23f4539c8d9a772034d94f230124d07e
+# Source0-md5:	2d4b94104e2266ed4a8ae306086e4243
 URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
 BuildRequires:	python3
 BuildRequires:	rpmbuild(macros) >= 1.691
-BuildRequires:	udev-devel >= 196
+BuildRequires:	udev-devel >= 1:196
 Requires(post,postun):	udev-core >= 1:196
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README COPYING
+%doc AUTHORS COPYING ChangeLog NEWS README
 %{_datadir}/media-player-info
 /lib/udev/hwdb.d/20-usb-media-players.hwdb
 /lib/udev/rules.d/40-usb-media-players.rules
