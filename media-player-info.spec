@@ -2,7 +2,7 @@ Summary:	Media player info files
 Summary(pl.UTF-8):	Pliki media player info
 Name:		media-player-info
 Version:	22
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Applications
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
@@ -13,6 +13,7 @@ BuildRequires:	python3
 BuildRequires:	rpmbuild(macros) >= 1.691
 BuildRequires:	udev-devel >= 1:196
 Requires(post,postun):	udev-core >= 1:196
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
