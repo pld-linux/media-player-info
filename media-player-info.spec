@@ -1,12 +1,12 @@
 Summary:	Media player info files
 Summary(pl.UTF-8):	Pliki media player info
 Name:		media-player-info
-Version:	22
-Release:	2
+Version:	23
+Release:	1
 License:	BSD-like
 Group:		Applications
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
-# Source0-md5:	2d4b94104e2266ed4a8ae306086e4243
+# Source0-md5:	02c7ee467b4929b15bcf529b5982a8fa
 URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
 BuildRequires:	python3
