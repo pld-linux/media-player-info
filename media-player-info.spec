@@ -5,11 +5,11 @@ Version:	23
 Release:	1
 License:	BSD-like
 Group:		Applications
-Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
+Source0:	https://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
 # Source0-md5:	02c7ee467b4929b15bcf529b5982a8fa
-URL:		http://www.freedesktop.org/wiki/Software/media-player-info/
+URL:		https://www.freedesktop.org/wiki/Software/media-player-info/
 BuildRequires:	pkgconfig
-BuildRequires:	python3
+BuildRequires:	python3 >= 3
 BuildRequires:	rpmbuild(macros) >= 1.691
 BuildRequires:	udev-devel >= 1:196
 Requires(post,postun):	udev-core >= 1:196
